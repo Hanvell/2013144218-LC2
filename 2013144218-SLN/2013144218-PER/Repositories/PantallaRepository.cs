@@ -10,5 +10,14 @@ namespace _2013144218_PER.Repositories
 {
     public class PantallaRepository : Repository<Pantalla>, IPantallaRepository
     {
+        public IEnumerable<Pantalla> getPantallaxATM(ATM ATM)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Pantalla> getPantallaxRetiro(Retiro Retiro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

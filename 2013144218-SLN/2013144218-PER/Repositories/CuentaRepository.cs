@@ -10,5 +10,9 @@ namespace _2013144218_PER.Repositories
 {
     public class CuentaRepository : Repository<Cuenta>, ICuentaRepository
     {
+        public IEnumerable<Cuenta> getCuentaxBaseDatos(BaseDatos BaseDatos)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

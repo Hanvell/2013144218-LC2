@@ -10,5 +10,19 @@ namespace _2013144218_PER.Repositories
 {
     public class BaseDatosRepository : Repository<BaseDatos>, IBaseDatosRepository
     {
+        public IEnumerable<BaseDatos> getBaseDatosxATM(ATM ATM)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<BaseDatos> getBaseDatosxCuenta(Cuenta Cuenta)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<BaseDatos> getBaseDatosxRetiro(Retiro Retiro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

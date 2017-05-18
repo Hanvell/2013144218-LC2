@@ -10,8 +10,7 @@ namespace _2013144218_PER.EntitiesConfigurations
 {
     public class ATMConfiguration : EntityTypeConfiguration<ATM>
     {
-        public class ATMConfiguration : EntityTypeConfiguration<ATM>
-        {
+        
 
             public ATMConfiguration()
             {
