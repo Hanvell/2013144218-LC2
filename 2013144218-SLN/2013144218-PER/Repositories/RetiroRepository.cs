@@ -10,6 +10,17 @@ namespace _2013144218_PER.Repositories
 {
     public class RetiroRepository : Repository<Retiro>, IRetiroRepository
     {
+        private readonly _2013144218_SLNDbContext _Context;
+
+        public RetiroRepository(_2013144218_SLNDbContext context)
+        {
+            _Context = context;
+        }
+
+        private RetiroRepository()
+        {
+        }
+
         public IEnumerable<Retiro> getRetiroxATM(ATM ATM)
         {
             throw new NotImplementedException();

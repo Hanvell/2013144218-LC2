@@ -10,6 +10,17 @@ namespace _2013144218_PER.Repositories
 {
     public class BaseDatosRepository : Repository<BaseDatos>, IBaseDatosRepository
     {
+        private readonly _2013144218_SLNDbContext _Context;
+
+        private BaseDatosRepository()
+        {
+        }
+
+        public BaseDatosRepository(_2013144218_SLNDbContext context)
+        {
+            _Context = context;
+        }
+
         public IEnumerable<BaseDatos> getBaseDatosxATM(ATM ATM)
         {
             throw new NotImplementedException();

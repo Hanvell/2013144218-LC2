@@ -11,6 +11,16 @@ namespace _2013144218_PER.Repositories
 {
     public class TecladoRepository : Repository<Teclado>, ITecladoRepository
     {
+        private readonly _2013144218_SLNDbContext _Context;
+
+        public TecladoRepository(_2013144218_SLNDbContext context)
+        {
+            _Context = context;
+        }
+        private TecladoRepository()
+        {
+        }
+
         public IEnumerable<Teclado> getTecladoporATM(ATM ATM)
         {
             throw new NotImplementedException();

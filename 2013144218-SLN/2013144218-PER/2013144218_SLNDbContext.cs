@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace _2013144218_PER
 {
     
-        class _2013144218_SLNDbContext : DbContext
+        public class _2013144218_SLNDbContext : DbContext
     {
 
         public DbSet<ATM> ATMs { get; set; }

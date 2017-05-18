@@ -10,6 +10,18 @@ namespace _2013144218_PER.Repositories
 {
     public class RanuraDepositoRepository : Repository<RanuraDeposito>, IRanuraDepositoRepository
     {
+        private  readonly _2013144218_SLNDbContext _Context;
+
+        public RanuraDepositoRepository(_2013144218_SLNDbContext context)
+        {
+            _Context = context;
+        }
+
+
+        private RanuraDepositoRepository()
+        {
+        }
+
         public IEnumerable<RanuraDeposito> getRanuraporATM(ATM ATM)
         {
             throw new NotImplementedException();

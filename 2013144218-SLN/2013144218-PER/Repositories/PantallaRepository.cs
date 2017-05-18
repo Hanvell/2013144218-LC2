@@ -10,6 +10,17 @@ namespace _2013144218_PER.Repositories
 {
     public class PantallaRepository : Repository<Pantalla>, IPantallaRepository
     {
+        private readonly _2013144218_SLNDbContext _Context;
+
+        public PantallaRepository(_2013144218_SLNDbContext context)
+        {
+            _Context = context;
+        }
+
+        private PantallaRepository()
+        {
+        }
+
         public IEnumerable<Pantalla> getPantallaxATM(ATM ATM)
         {
             throw new NotImplementedException();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2013144218_ENT.IRepositories
 {
-    public interface UnityOfWork : IDisposable
+    public interface IUnityOfWork : IDisposable
     {
 
         IATMRepository ATM { get; }

@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CajeroDbContext.cs" />
+    <Compile Include="2013144218_SLNDbContext.cs" />
     <Compile Include="EntitiesConfigurations\ATMConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\BaseDatosConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\CuentaConfiguration.cs" />
@@ -60,13 +60,12 @@
     <Compile Include="Repositories\ATMRepository.cs" />
     <Compile Include="Repositories\BaseDatosRepository.cs" />
     <Compile Include="Repositories\CuentaRepository.cs" />
-    <Compile Include="Repositories\IUnityofWork.cs" />
     <Compile Include="Repositories\PantallaRepository.cs" />
     <Compile Include="Repositories\RanuraDepositoRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\RetiroRepository.cs" />
     <Compile Include="Repositories\TecladoRepository.cs" />
-    <Compile Include="Repositories\UnityofWork.cs" />
+    <Compile Include="Repositories\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\2013144218-ENT\2013144218-ENT.csproj">
