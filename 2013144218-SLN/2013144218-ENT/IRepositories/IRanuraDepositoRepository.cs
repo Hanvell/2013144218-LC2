@@ -9,5 +9,6 @@ namespace _2013144218_ENT.IRepositories
 {
     public interface IRanuraDepositoRepository : IRepository<RanuraDeposito>
     {
+        IEnumerable<RanuraDeposito> getRanuraporATM(ATM ATM);
     }
 }

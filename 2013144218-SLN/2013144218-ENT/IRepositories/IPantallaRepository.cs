@@ -9,5 +9,7 @@ namespace _2013144218_ENT.IRepositories
 {
     public interface IPantallaRepository : IRepository<Pantalla>
     {
+        IEnumerable<Pantalla> getPantallaxATM(ATM ATM);
+        IEnumerable<Pantalla> getPantallaxRetiro(Retiro Retiro);
     }
 }

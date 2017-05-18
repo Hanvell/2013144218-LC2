@@ -10,11 +10,15 @@ namespace _2013144218_PER.EntitiesConfigurations
 {
     public class RanuraDepositoConfiguration : EntityTypeConfiguration<RanuraDeposito>
     {
+
         public RanuraDepositoConfiguration()
         {
-            HasKey(a => a.RanuraDepositoId);
-            Property(v => v.deposito)
-                .IsRequired();
+
+            ToTable("RanuraDeposito");
+
+            HasKey(a => a.idRanuraDeposito);
+
         }
+
     }
 }

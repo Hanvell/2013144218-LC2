@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace _2013144218_ENT.IRepositories
 {
-     public interface IBaseDatosRepository : IRepository<BaseDatos>
+    public interface IBaseDatosRepository : Repository<BaseDatos>
     {
+        IEnumerable<BaseDatos> getBaseDatosxATM(ATM ATM);
+        IEnumerable<BaseDatos> getBaseDatosxRetiro(Retiro Retiro);
+        IEnumerable<BaseDatos> getBaseDatosxCuenta(Cuenta Cuenta);
     }
 }

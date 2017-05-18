@@ -9,5 +9,6 @@ namespace _2013144218_ENT.IRepositories
 {
     public interface ICuentaRepository : IRepository<Cuenta>
     {
+        IEnumerable<Cuenta> getCuentaxBaseDatos(BaseDatos BaseDatos);
     }
 }

@@ -12,13 +12,13 @@ namespace _2013144218_PER.EntitiesConfigurations
     {
         public CuentaConfiguration()
         {
-            HasKey(a => a.CuentaId);
-            Property(v => v.Monto)
-                .IsRequired();
-            Property(v => v.NumeroCuenta)
-                .IsRequired();
-            Property(v => v.Pin)
-                .IsRequired();
+
+            ToTable("Cuenta");
+
+            HasKey(a => a.idCuenta);
+            HasRequired(c => c.BaseDatos).WithMany(g => g.listaCuentas).HasForeignKey(v => v.idBaseDatos);
+
         }
+
     }
 }

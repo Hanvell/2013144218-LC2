@@ -8,53 +8,25 @@ namespace _2013144218_ENT.Entidades
 {
     public class ATM
     {
-        public int ATMId { get; set; }
-        //los objetos de las clases con las que se relaciona
-        private RanuraDeposito _RanuraDeposito;
-        private Teclado _Teclado;
-        private Pantalla _Pantalla;
-        private DispensadorEfectivo _DispensadorEfectivo;
-        public BaseDatos BaseDatos { get; set; }
-        public Retiro Retiro { get; set; }
+        public int idATM { set; get; }
 
-        public RanuraDeposito RanuraDeposito
-        {
-            get { return _RanuraDeposito; }
-            set { _RanuraDeposito = value; }
-        }
+        public RanuraDeposito ranuradeposito { set; get; }
+        public int idRanuraDeposito { set; get; }
 
-        public Teclado Teclado
-        {
-            get { return _Teclado; }
-            set { _Teclado = value; }
-        }
+        public Teclado teclado { set; get; }
+        public int idTeclado { set; get; }
 
-        public Pantalla Pantalla
-        {
-            get { return _Pantalla; }
-            set { _Pantalla = value; }
-        }
+        public DispensadorEfectivo dispensadorEfectivo { set; get; }
+        public int idDispensadorEfectivo { set; get; }
 
-        public DispensadorEfectivo DispensadorEfectivo
-        {
-            get { return _DispensadorEfectivo; }
-            set { _DispensadorEfectivo = value; }
-        }
+        public Pantalla pantalla { set; get; }
+        public int idPantalla { set; get; }
 
+        public int idRetiro { set; get; }
+        public Retiro Retiro { set; get; }
 
-        public ATM()
-        {
-            _RanuraDeposito = new RanuraDeposito();
-            _Teclado = new Teclado();
-            _Pantalla = new Pantalla();
-        }
-
-        public ATM(BaseDatos baseDatos)
-        {
-
-            BaseDatos = baseDatos;
-        }
-
+        public int idBaseDatos { set; get; }
+        public BaseDatos BaseDatos { set; get; }
 
     }
 }

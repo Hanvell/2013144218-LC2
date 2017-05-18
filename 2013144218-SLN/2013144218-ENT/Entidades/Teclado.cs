@@ -8,32 +8,13 @@ namespace _2013144218_ENT.Entidades
 {
     public class Teclado
     {
-        public int TecladoId { get; set; }
-        private int _NumeroCuenta;
-        private int _Pin;
-        public ATM ATM { get; set; }
-        public Retiro Retiro { get; set; }
+        public int idTeclado { set; get; }
+        public String Marca { set; get; }
 
-        public int NumeroCuenta
-        {
-            get { return _NumeroCuenta; }
-            set { _NumeroCuenta = value; }
-        }
+        public int idATM { set; get; }
+        public ATM ATM { set; get; }
 
-        public int Pin
-        {
-            get { return _Pin; }
-            set { _Pin = value; }
-        }
-
-        public Teclado()
-        {
-
-        }
-        public Teclado(int numeroCuenta, int pin)
-        {
-            NumeroCuenta = numeroCuenta;
-            Pin = pin;
-        }
+        public int idRetiro { set; get; }
+        public Retiro Retiro { set; get; }
     }
 }

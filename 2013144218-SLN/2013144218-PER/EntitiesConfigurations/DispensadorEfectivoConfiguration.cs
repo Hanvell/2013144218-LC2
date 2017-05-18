@@ -10,13 +10,14 @@ namespace _2013144218_PER.EntitiesConfigurations
 {
     public class DispensadorEfectivoConfiguration : EntityTypeConfiguration<DispensadorEfectivo>
     {
+
         public DispensadorEfectivoConfiguration()
         {
-            HasKey(a => a.DispensadorEfectivoId);
-            Property(v => v.DispensadorEfectivoId)
-                .IsRequired();
-            Property(v => v.Contador)
-                .IsRequired();
+
+            ToTable("DispensadorEfectivo");
+
+            HasKey(a => a.idDispensadorefectivo);
+            HasOptional(c => c.Retiro).WithRequired(c => c.Dispensadorefectivo);
         }
     }
 }

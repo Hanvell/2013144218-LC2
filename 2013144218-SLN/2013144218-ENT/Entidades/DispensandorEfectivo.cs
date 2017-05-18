@@ -8,19 +8,15 @@ namespace _2013144218_ENT.Entidades
 {
     public class DispensadorEfectivo
     {
-        public int DispensadorEfectivoId { get; set; }
-        private int _Contador = -500;
-        public ATM ATM { get; set; }
-        public Retiro Retiro { get; set; }
+        public int idDispensadorefectivo { set; get; }
+        public int contador { set; get; }
 
-        public int Contador
-        {
-            get { return _Contador; }
-        }
+        public int idATM { set; get; }
+        public ATM ATM { set; get; }
 
-        public DispensadorEfectivo()
-        {
+        public int idRetiro { set; get; }
+        public Retiro Retiro { set; get; }
 
-        }
+
     }
 }

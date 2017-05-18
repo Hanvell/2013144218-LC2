@@ -10,12 +10,16 @@ namespace _2013144218_PER.EntitiesConfigurations
 {
     public class PantallaConfiguration : EntityTypeConfiguration<Pantalla>
     {
+
         public PantallaConfiguration()
         {
-            HasKey(a => a.PantallaId);
-            Property(v => v.Texto)
-                .IsRequired()
-                .HasMaxLength(255);
+
+            ToTable("Pantalla");
+
+            HasKey(a => a.idPantalla);
+            HasOptional(c => c.Retiro).WithRequired(c => c.Pantalla);
+
         }
+
     }
 }

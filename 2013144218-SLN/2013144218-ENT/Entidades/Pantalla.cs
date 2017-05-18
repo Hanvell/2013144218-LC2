@@ -8,23 +8,11 @@ namespace _2013144218_ENT.Entidades
 {
     public class Pantalla
     {
-        public int PantallaId { get; set; }
-        private string _Texto;
-        public ATM ATM { get; set; }
-        public Retiro Retiro { get; set; }
+        public int idPantalla { set; get; }
 
-        public string Texto
-        {
-            get { return _Texto; }
-            set { _Texto = value; }
-        }
-        public Pantalla()
-        {
-
-        }
-        public Pantalla(string texto)
-        {
-            Texto = texto;
-        }
+        public int idATM { set; get; }
+        public ATM ATM { set; get; }
+        public int idRetiro { set; get; }
+        public Retiro Retiro { set; get; }
     }
 }

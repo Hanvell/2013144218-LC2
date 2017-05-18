@@ -10,13 +10,15 @@ namespace _2013144218_PER.EntitiesConfigurations
 {
     public class TecladoConfiguration : EntityTypeConfiguration<Teclado>
     {
+
+
         public TecladoConfiguration()
         {
-            HasKey(a => a.TecladoId);
-            Property(v => v.NumeroCuenta)
-                .IsRequired();
-            Property(v => v.Pin)
-                .IsRequired();
+
+            ToTable("Teclado");
+
+            HasKey(a => a.idTeclado);
+            HasOptional(c => c.Retiro).WithRequired(c => c.Teclado);
 
         }
     }

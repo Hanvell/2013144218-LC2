@@ -10,11 +10,16 @@ namespace _2013144218_PER.EntitiesConfigurations
 {
     public class BaseDatosConfiguration : EntityTypeConfiguration<BaseDatos>
     {
+
         public BaseDatosConfiguration()
         {
-            HasKey(a => a.BaseDatosId);
-            HasMany(c => c.Cuentas)
-                .WithRequired(c => c.BaseDatos);
+
+            ToTable("BaseDatos");
+
+            HasKey(a => a.idBaseDatos);
+            HasOptional(c => c.ATM).WithRequired(c => c.BaseDatos);
+
         }
+
     }
 }
